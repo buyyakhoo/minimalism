@@ -1,0 +1,131 @@
+* {
+    font-family: Consolas;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgb(50, 45, 129);
+    margin: 0 auto;
+    /* padding: 1rem; */
+    max-width: 1200px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+footer, header {
+    background-color: rgb(67, 55, 174);
+    border-radius: 10px;
+    padding: .5rem;
+    color: rgb(255, 125, 242);
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 125, 125);
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+/*main*/
+
+main {
+    margin-bottom: 120px;
+    padding: .5rem;
+    /* padding-bottom: 100px; */
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;  
+}
+
+main .info-l {
+    min-width: 300px;
+    padding: 1rem;
+    overflow-wrap: break-word;
+    flex: 2;
+}
+
+main .info-r {
+    min-width: 300px;
+    padding: 1rem;
+    flex: 1;
+    justify-content: left;
+}
+
+main a {
+    color: rgb(255, 134, 134);
+    text-decoration: none;
+}
+
+
+main h1 {
+    color: rgb(145, 255, 218);
+    font-size: 30px;
+    margin: 20px;
+}
+
+main h2 {
+    color:rgb(134, 214, 234);
+    font-size: 25px;
+    margin: 10px;
+}
+
+main p, main ul li{
+    color: rgb(238, 238, 238);
+}
+
+main .mes {
+    color: rgb(243, 255, 134);
+}
+
+
+main ul li {
+    list-style-type: none;
+}
+
+.pride-strip {
+    width: 100%;
+    height: 4px;
+    background-size: 100% 100%;
+    content: '';
+    display: block;
+    background-image: linear-gradient(left,#cf0f0f 0%,#cf0f0f 18%,#ffa000 18%,#ffa000 33%,#ffd200 33%,#ffd200 50%,#36a030 50%,#36a030 66%,#1b77cd 66%,#1b77cd 83%,#4d148c 83%,#4d148c 100% );
+    background-image: -o-linear-gradient(left,#cf0f0f 0%,#cf0f0f 18%,#ffa000 18%,#ffa000 33%,#ffd200 33%,#ffd200 50%,#36a030 50%,#36a030 66%,#1b77cd 66%,#1b77cd 83%,#4d148c 83%,#4d148c 100% );
+    background-image: -moz-linear-gradient(left,#cf0f0f 0%,#cf0f0f 18%,#ffa000 18%,#ffa000 33%,#ffd200 33%,#ffd200 50%,#36a030 50%,#36a030 66%,#1b77cd 66%,#1b77cd 83%,#4d148c 83%,#4d148c 100% );
+    background-image: -webkit-linear-gradient(left,#cf0f0f 0%,#cf0f0f 18%,#ffa000 18%,#ffa000 33%,#ffd200 33%,#ffd200 50%,#36a030 50%,#36a030 66%,#1b77cd 66%,#1b77cd 83%,#4d148c 83%,#4d148c 100% );
+    background-image: -ms-linear-gradient(left,#cf0f0f 0%,#cf0f0f 18%,#ffa000 18%,#ffa000 33%,#ffd200 33%,#ffd200 50%,#36a030 50%,#36a030 66%,#1b77cd 66%,#1b77cd 83%,#4d148c 83%,#4d148c 100% );
+    background-image: -webkit-gradient( linear,left bottom,right bottom,color-stop( 0,#cf0f0f),color-stop( .18,#cf0f0f),color-stop( .18,#ffa000),color-stop( .33,#ffa000),color-stop( .33,#ffd200),color-stop( .5,#ffd200),color-stop( .5,#36a030),color-stop( .66,#36a030),color-stop( .66,#1b77cd),color-stop( .83,#1b77cd),color-stop( .83,#4d148c),color-stop( 1,#4d148c));
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    max-width: 1200px; /*max-height doesn't work with the main height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* footer hr, footer p, footer .pride-strip {
+    flex: 1 1 auto;
+} */
+
