@@ -10,15 +10,14 @@
 
 html {    
     position: relative;
-    margin: 0 auto;
     min-height: 100vh;
-    max-width: 1200px;
+    
     /* min-height: 100vh;  */
 }
 
 body {
-
-
+    max-width: 1200px;
+    margin: 0 auto;
     /* position: relative; */
     /* margin-bottom: 120px; */
     background-color: rgb(50, 45, 129);
@@ -140,11 +139,11 @@ footer {
     justify-content: space-between;
 }
 
-/* @media (max-width: 1200px) {
+@media (min-width: 1200px) {
     footer {
-        width: fit-content;
+        width: 1170px;
     }
-} */
+}
 
 
 /* footer hr, footer p, footer .pride-strip {
