@@ -21,7 +21,7 @@ body {
     /* position: relative; */
     /* margin-bottom: 120px; */
     background-color: rgb(50, 45, 129);
-
+    line-height: 1.6;
     
     /* padding: 1rem; */
     /* display: flex;
@@ -36,10 +36,14 @@ footer, header {
     color: rgb(255, 125, 242);
 }
 
-header nav {
+header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
 }
 
 header nav a {
@@ -95,6 +99,10 @@ main h2 {
     color:rgb(134, 214, 234);
     font-size: 25px;
     margin: 10px;
+}
+
+main p {
+    text-align: justify;
 }
 
 main p, main ul li{
