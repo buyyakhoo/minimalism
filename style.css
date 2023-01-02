@@ -11,7 +11,6 @@
 html {    
     position: relative;
     min-height: 100vh;
-    
     /* min-height: 100vh;  */
 }
 
@@ -139,9 +138,13 @@ footer {
     min-height: 100px;
     /* width: 100%; */
     /* width: 100%; */
-    max-width: 1200px;
+    /* max-width: 1200px; */
     /* max-height doesn't work with the main height */
     /* width: max-content; */
+
+    width: -webkit-calc(100% - 20px);
+    width:    -moz-calc(100% - 20px);
+    width:         calc(100% - 20px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,7 +152,7 @@ footer {
 
 @media (min-width: 1200px) {
     footer {
-        width: 1170px;
+        max-width: 1170px;
     }
 }
 
