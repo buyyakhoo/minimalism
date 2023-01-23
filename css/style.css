@@ -11,6 +11,7 @@
 html {    
     position: relative;
     min-height: 100vh;
+    margin-top: 84px;
     /* min-height: 100vh;  */
 }
 
@@ -35,12 +36,27 @@ footer, header {
     color: rgb(255, 125, 242);
 }
 
-header {
+.container-h header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    width: 1200px;
+    /* max-width: 100%; */
+    max-width: -webkit-calc(100% - 20px);
+    max-width:    -moz-calc(100% - 20px);
+    max-width:         calc(100% - 20px);
+
+    /* margin-bottom: 84px; */
+    
+}
+
+.container-h {
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header nav {
@@ -59,7 +75,7 @@ header #mobLink {
     position: absolute;
     display: none;
     width: 100%;
-    top: 4.25rem;
+    top: 4.2rem;
     left: 0;
 }
 
@@ -114,6 +130,7 @@ header h1 {
 
 main {
     /* margin: 0 auto; */
+    /* margin-top: 84px; */
     margin-bottom: 120px;
     padding: .5rem;
     /* padding-bottom: 100px; */
@@ -219,6 +236,12 @@ footer p {
 
 }
 
+/* @media (min-width: 700px) {
+    header #mobLink {
+        display: none;
+    }
+} */
+
 @media (max-width: 700px) {
     header nav {
         display: none;
@@ -228,6 +251,8 @@ footer p {
         display: block;
     }
 }
+
+
 
 
 /* footer hr, footer p, footer .pride-strip {
