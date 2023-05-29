@@ -1,5 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * { 
     font-family: 'Karla', sans-serif;
@@ -10,8 +12,7 @@
 
 html {    
     position: relative;
-    min-height: 100vh;
-    margin-top: 84px;
+    min-height: 100vh;    
     /* min-height: 100vh;  */
 }
 
@@ -131,6 +132,7 @@ header h1 {
 main {
     /* margin: 0 auto; */
     /* margin-top: 84px; */
+    margin-top: 84px;
     margin-bottom: 120px;
     padding: .5rem;
     /* padding-bottom: 100px; */
@@ -187,6 +189,22 @@ main .mes {
 
 main ul li {
     list-style-type: none;
+}
+
+main pre {
+    background: rgb(37, 33, 94);
+    white-space: pre;
+    word-wrap: break-word;
+    overflow: auto;
+    border-radius: 10px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+main pre code {
+    font-family: 'Source Code Pro', monospace;
+    color: #4dd0e1;
+    font-size: .8rem;
 }
 
 .pride-strip {
@@ -251,8 +269,6 @@ footer p {
         display: block;
     }
 }
-
-
 
 
 /* footer hr, footer p, footer .pride-strip {
